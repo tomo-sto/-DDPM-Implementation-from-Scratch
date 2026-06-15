@@ -1,12 +1,15 @@
 # -DDPM-Implementation-from-Scratch
 
 ## 概要
+
 Ho et al. (2020)「Denoising Diffusion Probabilistic Models」をPyTorchでスクラッチしっぞう
 
 ## 動機
+
 DDPMの順方向がランジュバン方程式と同型であることに着目。理論物理における確率過程の理解の一環として、数式から理解した内容を実装して検証する。
 
 ## 理論背景
+
 順方向過程では決まったノイズによって時間発展させる:
 
 $$
@@ -36,4 +39,7 @@ $$
 | セル7 | 生成画像の保存（`sample.png`） |
 
 ## 結果
+
 MINISTで50エポックで学習した結果のサンプル画像
+
+![生成結果](results_sample.png)
