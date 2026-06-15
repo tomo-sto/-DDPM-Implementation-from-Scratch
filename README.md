@@ -1,8 +1,8 @@
-# -DDPM-Implementation-from-Scratch
+# DDPM-Implementation-from-Scratch
 
 ## 概要
 
-Ho et al. (2020)「Denoising Diffusion Probabilistic Models」をPyTorchでスクラッチしっぞう
+Ho et al. (2020)「Denoising Diffusion Probabilistic Models」をPyTorchでスクラッチ実装
 
 ## 動機
 
@@ -19,7 +19,7 @@ $$
 任意のステップ$t$に対して、訓練データ$x_0$から
 
 $$
-q(x_t | x_0) = N(x_t; \sqrt{ᾱ_t}x_0, (1-ᾱ_t)·I)
+q(x_t \mid x_0) = \mathcal{N}(x_t;\, \sqrt{\bar{\alpha}_t}\,x_0,\,(1-\bar{\alpha}_t)\cdot I)
 $$
 
 と解析的に表せる。
